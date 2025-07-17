@@ -10,6 +10,7 @@ public class MaxProdArray {
         {
             int temp = maxProd;
 
+            //TO DO REFRACTOR IT TO FUNCTION
             maxProd = Math.max(Math.max(arr[i], maxProd * arr[i]), minProd * arr[i]);
             minProd = Math.min(Math.min(arr[i], temp * arr[i]), minProd * arr[i]);
 
